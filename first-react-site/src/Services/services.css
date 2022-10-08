@@ -1,0 +1,38 @@
+.services {
+}
+.services__title {
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 20px;
+    margin: 0 0 16px;
+    text-align: center;
+    padding-top: 16px;
+}
+.services__box {
+padding-bottom: 16px;
+}
+.services__box>ul{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.services__li {
+    position: relative;
+    font-size: 17px;
+    padding: 8px;
+}
+.services__li::before {
+    content: '';
+    position: absolute;
+    background: url(../Services/checkmark.svg);
+    width: 20px;
+    height: 20px;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.services__dscr {
+    margin: 24px 0 0;
+    text-align: center;
+    font-weight: 700;
+}
